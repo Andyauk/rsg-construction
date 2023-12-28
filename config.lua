@@ -13,7 +13,6 @@ Config.Moneytype = 'cash' -- Set to cash or bank
 Config.PayPerDrop = 2 -- Pay is 10 cents per drop
 Config.DropCount = math.random(7, 10) -- Max drops before they must collect paycheck
 Config.PlaceTime = 10 -- How long the progressbar to place wood is - In Seconds
---Config.PlaceTime = 5 -- How long the progressbar to place wood is - In Seconds
 
 -- MINIGAME CONFIG --
 Config.Circle = 5 -- Circles required to complete
