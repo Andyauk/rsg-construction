@@ -2,7 +2,7 @@
 
 Simple construction job for RSG core
 
-Original code made by xThrasher / Converted& restructered bt:Andyauk
+Original code made by xThrasher / Converted by:Andyauk
 
 # General Info:
 
