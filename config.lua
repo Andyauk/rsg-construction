@@ -79,7 +79,7 @@ Config.JobNpc = {
         ['Pos'] = vector3(-317.44, -355.26, 87.58),
         ['Heading'] = 2.646,
         ['Name'] = 'Newhanoberg'
-    }, -- Newhanoberg -- not working
+    }, -- Newhanoberg
     [11] = {
         ['Model'] = 'cs_cooper',
         ['Pos'] = vector3(-339.6, 796.82, 116.6),
