@@ -27,5 +27,5 @@ Original code made by xThrasher / Converted by:Andyauk
 - rsg-core : https://github.com/Rexshack-RedM/rsg-core
 - rsg-lock : https://github.com/euenvy/rsg-lock
 
-untill rsg-lock has updated, please use my copy that fies a conflict 
+untill rsg-lock has updated, please use my copy that fixes a conflict 
 https://github.com/Andyauk/rsg-lock
