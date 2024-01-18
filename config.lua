@@ -24,73 +24,73 @@ Config.JobNpc = {
         ['Model'] = 'cs_cooper',
         ['Pos'] = vector3(-859.2, -1279.73, 43.56),
         ['Heading'] = 350.34,
-        ['Name'] = 'Blackwater'
+        ['Name'] = 'Blackwater Construction'
     }, -- Blackwater
     [2] = {
         ['Model'] = 'cs_cooper',
         ['Pos'] = vector3(-4193.972, -3441.868, 37.08226),
         ['Heading'] = 46.157726,
-        ['Name'] = 'FortMercer'
+        ['Name'] = 'FortMercer Construction'
     }, -- FortMercer
     [3] = {
         ['Model'] = 'cs_cooper',
         ['Pos'] = vector3(-1414.259, -2210.495, 43.392242),
         ['Heading'] = 321.20864,
-        ['Name'] = 'ThievesLanding'
+        ['Name'] = 'ThievesLanding Construction'
     }, -- ThievesLanding
     [4] = {
         ['Model'] = 'cs_cooper',
         ['Pos'] = vector3(467.43194, 604.91381, 110.4023),
         ['Heading'] = 235.18406,
-        ['Name'] = 'OilFields'
+        ['Name'] = 'OilFields Construction'
     }, -- HeartlandOilFields
     [5] = {
         ['Model'] = 'cs_cooper',
         ['Pos'] = vector3(2751.9958, -1476.287, 45.394123),
         ['Heading'] = 212.52,
-        ['Name'] = 'Saint Denis'
+        ['Name'] = 'Saint Denis Construction'
     }, -- SD Docks
     [6] = {
         ['Model'] = 'cs_cooper',
         ['Pos'] = vector3(-1400.77, -206.05, 102.9),
         ['Heading'] = 200.27,
-        ['Name'] = 'Appleseed'
+        ['Name'] = 'Appleseed Construction'
     }, -- Apple Seed Timber Company
     [7] = {
         ['Model'] = 'cs_cooper',
         ['Pos'] = vector3(2896.34, 632.53, 57.72),
         ['Heading'] = -04.44,
-        ['Name'] = 'Roanoke'
+        ['Name'] = 'Roanoke Construction'
     }, -- Roanoke
     [8] = {
         ['Model'] = 'cs_cooper',
         ['Pos'] = vector3(576.87, 1703.86, 187.50),
         ['Heading'] = 244.52,
-        ['Name'] = 'Bacchus'
+        ['Name'] = 'Bacchus Construction'
     }, -- Bacchus
     [9] = {
         ['Model'] = 'cs_cooper',
         ['Pos'] = vector3(-1235.99, 531.70, 94.15),
         ['Heading'] = -04.44,
-        ['Name'] = 'Wallace'
+        ['Name'] = 'Wallace Construction'
     }, -- Wallace
     [10] = {
         ['Model'] = 'cs_cooper',
         ['Pos'] = vector3(-317.44, -355.26, 87.58),
         ['Heading'] = 2.646,
-        ['Name'] = 'Newhanoberg'
+        ['Name'] = 'Newhanoberg Construction'
     }, -- Newhanoberg
     [11] = {
         ['Model'] = 'cs_cooper',
         ['Pos'] = vector3(-339.6, 796.82, 116.6),
         ['Heading'] = 150.07,
-        ['Name'] = 'Valentine'
+        ['Name'] = 'Valentine Construction'
     } -- Valentine
 }
 
 -- LOCATION OF JOB SITES --
 Config.Locations = {
-    ['Blackwater'] = {
+    ['BlackwaterConstruction'] = {
         ['Location'] = vector3(-859.2434, -1277.857, 43.559108),
         ['WoodLocations'] = {
             -- Pickup Wood Locations
@@ -107,7 +107,7 @@ Config.Locations = {
             [7] = {coords = vector3(-830.9206, -1262.397, 43.569721)}
         }
     },
-    ['SD'] = {
+    ['SDConstruction'] = {
         ['Location'] = vector3(2751.9958, -1476.287, 45.394123),
         ['WoodLocations'] = {
             -- Pickup Wood Locations
@@ -124,7 +124,7 @@ Config.Locations = {
             [7] = {coords = vector3(2771.6037, -1488.672, 45.96693)}
         }
     },
-    ['ThievesLanding'] = {
+    ['ThievesLandingConstruction'] = {
         ['Location'] = vector3(-1414.259, -2210.495, 43.392242),
         ['WoodLocations'] = {
             -- Pickup Wood Locations
@@ -141,7 +141,7 @@ Config.Locations = {
             [7] = {coords = vector3(-1393.942, -2207.734, 43.74707)}
         }
     },
-    ['OilFields'] = {
+    ['OilFieldsConstruction'] = {
         ['Location'] = vector3(468.02682, 604.53375, 110.39758),
         ['WoodLocations'] = {
             -- Pickup Wood Locations
@@ -158,7 +158,7 @@ Config.Locations = {
             [7] = {coords = vector3(462.67242, 612.19372, 112.52149)}
         }
     },
-    ['FortMercer'] = {
+    ['FortMercerConstruction'] = {
         ['Location'] = vector3(-4195.128, -3442.244, 37.076152),
         ['WoodLocations'] = {
             -- Pickup Wood Locations
@@ -175,7 +175,7 @@ Config.Locations = {
             [7] = {coords = vector3(-4205.782, -3444.85, 39.994956)}
         }
     },
-    ['Appleseed'] = {
+    ['AppleseedConstruction'] = {
         ['Location'] = vector3(-1400.77, -206.05, 102.9),
         ['WoodLocations'] = {
             -- Pickup Wood Locations
@@ -190,7 +190,7 @@ Config.Locations = {
             [5] = {coords = vector3(-1448.54, -245.83, 102.91)}
         }
     },
-    ['Roanoke'] = {
+    ['RoanokeConstruction'] = {
         ['Location'] = vector3(2896.34, 632.53, 57.72),
         ['WoodLocations'] = {
             -- Pickup Wood Locations
@@ -204,7 +204,7 @@ Config.Locations = {
             [4] = {coords = vector3(2893.62, 619.87, 57.73)}
         }
     },
-    ['Bacchus'] = {
+    ['BacchusConstruction'] = {
         ['Location'] = vector3(576.87, 1703.86, 187.50),
         ['WoodLocations'] = {
             -- Pickup Wood Locations
@@ -218,7 +218,7 @@ Config.Locations = {
             [4] = {coords = vector3(584.56, 1670.65, 187.75)}
         }
     },
-    ['Wallace'] = {
+    ['WallaceConstruction'] = {
         ['Location'] = vector3(-1235.99, 531.70, 94.15),
         ['WoodLocations'] = {
             -- Pickup Wood Locations
@@ -232,7 +232,7 @@ Config.Locations = {
             [4] = {coords = vector3(-1207.09, 567.17, 92.15)}
         }
     },
-    ['Newhanoberg'] = {
+    ['NewhanobergConstruction'] = {
         ['Location'] = vector3(-317.44, -355.26, 87.58),
         ['WoodLocations'] = {
             -- Pickup Wood Locations
@@ -249,7 +249,7 @@ Config.Locations = {
             [7] = {coords = vector3(-321.650, -339.955, 88.165)}
         }
     },
-    ['Valentine'] = {
+    ['ValentineConstruction'] = {
         ['Location'] = vector3(-339.6, 796.82, 116.6),
         ['WoodLocations'] = {
             -- Pickup Wood Locations
