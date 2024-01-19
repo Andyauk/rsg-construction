@@ -333,7 +333,7 @@ CreateThread(function()
             Wait(300)
         end
         Citizen.InvokeNative(0x283978A15512B2FE, npc, true)
-        FreezeEntityPosition(npc, false)
+        FreezeEntityPosition(npc, true)
         SetEntityInvincible(npc, true)
         TaskStandStill(npc, -1)
         Wait(100)
