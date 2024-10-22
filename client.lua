@@ -217,7 +217,7 @@ RegisterNetEvent('rsg-construction:DropWood', function()
     if hasJob then
         if DropCount <= Config.DropCount then
 
-            local success = exports['rsg-lock']:StartLockPickCircle( 3, 10 )
+            local success = lib.skillCheck({'easy', {areaSize = 50, speedMultiplier = 0.5}}, {'w', 'a', 's', 'd'})
             if success then
                 -- REMOVES THE WOOD PLANK PROP --
                 for k, v in pairs(GetGamePool('CObject')) do
@@ -232,13 +232,25 @@ RegisterNetEvent('rsg-construction:DropWood', function()
                 PickedUp = false
 
                 -- START ANIMATION --
-                TaskStartScenarioInPlace(PlayerPedId(), GetHashKey('WORLD_PLAYER_DYNAMIC_KNEEL'), -1, true, false, false, false)
-                RSGCore.Functions.Progressbar("hammerwood", "Placing Wood...", (Config.PlaceTime * 1000), false, true, {
-                    disableMovement = true,
-                    disableCarMovement = false,
-                    disableMouse = false,
-                    disableCombat = true,
-                }, {}, {}, {}, function() -- Done
+                lib.progressBar({
+                    duration = (Config.PlaceTime * 1000),
+                    position = 'bottom',
+                    useWhileDead = false,
+                    canCancel = false,
+                    disableControl = true,
+                    disable = {
+                        move = true,
+                        car = true,
+                        mouse = true,
+                        combat = true,
+                    },
+                    anim = {
+                        dict = 'amb_work@world_human_hammer@wall@male_a@idle_c',
+                        clip = 'idle_g',
+                        flag = 1,
+                    },
+                    label = 'Placing Wood...',
+                })
 
                     DropCount = DropCount + 1
 
@@ -255,7 +267,6 @@ RegisterNetEvent('rsg-construction:DropWood', function()
                     else
                         lib.notify({ title = 'You\'ve completed your work, you can collect your paycheck or get another task!', type = 'success', duration = 5000 })
                     end
-                end)
 
             else
                 SetPedToRagdoll(PlayerPedId(), 1000, 1000, 0, 0, 0, 0)
